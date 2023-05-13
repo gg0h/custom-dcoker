@@ -1,0 +1,1 @@
+unzip PHPFusion\ 9.10.30.zip && mv PHPFusion\ 9.10.30 phpfusion
