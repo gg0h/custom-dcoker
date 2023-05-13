@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    ports:
+      - 8000:80
+
+  mysql:
+    image: mysql:5.6
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: todos
+
+volumes:
+  todo-mysql-data:
+
+
+
+
+# upload result $_FILES
+# PDFCustomerList warnings error_reporting(E_ALL & ~E_USER_DEPRECATED);
